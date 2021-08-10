@@ -1,14 +1,15 @@
 version: "3.3"
 services:
   backend:
-    image: fastapi-backend:latest
+    image: fastapi-backend:new
     env_file:
       - .env
     environment:
       - ENVIRONMENT=TEST
     build:
       context: ./backend
-      dockerfile: ../../fastapi-test/backend/app/backend.dockerfile
+      dockerfile: backend.dockerfile
     container_name: fastapi-backend
     ports:
     - 8083:80
+    restart: always
