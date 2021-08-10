@@ -1,0 +1,48 @@
+# Docker
+.env
+
+# MacOS
+.DS_Store
+
+# python
+dbsettings.json
+devsettings.py
+testscript.py
+__pycache__
+*.pyc
+startscript.py
+test.py
+
+# pycharm
+.idea
+*.iml
+
+# output files
+*.log
+
+# jupyter
+.ipynb_checkpoints
+
+# settings
+settings.json
+
+# Python venv
+venv
+.venv/
+.python-version
+
+# Hypothesis cache
+.hypothesis
+
+.mypy_cache
+.coverage
+coverage.xml
+.coveragerc
+
+# Env-file
+*.env
+
+# ndwlibrary package build files
+build/
+dist/
+ndwlibrary.egg-info/
