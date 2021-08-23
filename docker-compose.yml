@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   backend:
-    image: fastapi-backend:new
+    image: fastapi-backend:latest
     env_file:
       - .env
     environment:
