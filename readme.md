@@ -10,9 +10,15 @@ It uses some security measures which have not been tested extensively, hence thi
 - The folder structure is based upon [Tiangolo's full-stack-fastapi-postgresql](https://github.com/tiangolo/full-stack-fastapi-postgresql) FastAPI deployment. 
 
 ## Installation using docker-compose
+- copy the example.env file and generate your own secret key for JWT. 
+```zsh
+cp example.env .env
+openssl rand -hex 32
+```
+- build and run application using docker-compose.
 ```zsh
 docker-compose up -d --build
 ```
 This opens up an API on localhost on port `8083`. 
 - base url: [http://localhost:8083/](http://localhost:8083/)
-- docs url: [http://localhost:8083/docs](http://localhost:8083/docs)
+- interactive docs url: [http://localhost:8083/docs](http://localhost:8083/docs)
